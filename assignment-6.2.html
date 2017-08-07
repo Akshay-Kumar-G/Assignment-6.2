@@ -1,0 +1,58 @@
+<!DOCUMENTTYPE HTML>
+	<html>
+<head>
+<title>Assignment6.2</title>
+</head>
+
+
+<h1> This is Assignment 6.2</h1>
+<h2> <b>Assignment:</b></h2> Create an Array of numbers Example as var arr= [3,4,5,6,76,7,8];<br>
+ Push 4 elements in an existing array list.<br>
+ Pop the inserted pushed elements.<br>
+ Extract the elements from first index to fourth index and display the list<br>
+ Iterate the array element using for of loop or forEach loop.<br>
+
+	
+	<script language="JavaScript">
+  /* Creating array */
+	var arr = [3,4,5,6,76,7,8];
+
+/* Push elements */
+	arr.push(15,14,21,63);
+  document.write("The elements of an array after push:<br>");
+  for(i=0;i<arr.length;i++)
+    document.write(arr[i]+"<br>");
+document.write("<br><br>");
+/* Pop the elements */
+arr.pop();
+arr.pop();
+arr.pop();
+arr.pop();
+document.write("The elements of an array after pop:<br>");
+for(i=0;i<arr.length;i++)
+    document.write(arr[i]+"<br>");
+document.write("<br><br>");
+document.write("First four elements of an array:<br>");
+/* Extracting array elements */
+for(i=0;i<4;i++)
+  document.write(arr[i]+"<br>");
+document.write("<br><br>");
+	
+document.write("elements of an array using forEach loop:<br>");
+  </script>
+
+	<button onclick="numbers.forEach(myFunction)">Try it</button>
+<p id="demo"></p>
+
+<script>
+demoP = document.getElementById("demo");
+var numbers = [3, 4, 5, 6, 76, 7, 8];
+/* Iterating elements using forEach loop */
+function myFunction(item, index) {
+    demoP.innerHTML = demoP.innerHTML + "index[" + index + "]: " + item + "<br>"; 
+}
+</script>
+</script>
+
+</body>
+</html>
